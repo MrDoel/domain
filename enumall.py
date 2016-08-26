@@ -57,9 +57,6 @@ def run_recon(domains, bruteforce):
 	
 	#reporting output
 	outFile = "FILENAME "+os.getcwd()+"/"+domains[0]
-	x = reconb.do_load("reporting/csv")
-	x.do_set(outFile+".csv")
-	x.do_run(None)
 
 	x = reconb.do_load("reporting/list")
 	x.do_set(outFile+".lst")
